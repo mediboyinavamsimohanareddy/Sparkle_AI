@@ -25,5 +25,5 @@ EXPOSE 8080
 # Environment defaults
 ENV PORT=8080
 
-# Run Spring Boot application
-ENTRYPOINT ["java", "-Dserver.port=${PORT}", "-jar", "app.jar"]
+# Run Spring Boot application with shell execution to evaluate $PORT properly
+ENTRYPOINT ["sh", "-c", "java -Dserver.port=${PORT:-8080} -jar app.jar"]
