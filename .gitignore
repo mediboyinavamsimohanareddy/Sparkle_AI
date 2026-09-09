@@ -1,0 +1,29 @@
+# Environment variables
+.env
+*.env
+.env.local
+
+# Build directories & binaries
+target/
+dist/
+node_modules/
+.mvn/
+*.jar
+*.war
+
+# IDE & Editor files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# Uploads directory
+uploads/docs/*
+uploads/images/*
+!uploads/docs/.gitkeep
+!uploads/images/.gitkeep
+
+# System files
+.DS_Store
+Thumbs.db
